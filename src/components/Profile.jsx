@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState, useEffect, useContext } from "react";
 import { fetchUserProfile } from "../API";
 import { UserContext } from "../contexts/UserContext";
