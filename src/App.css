@@ -9,16 +9,17 @@ body {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url('w3css.gif');
+  background-color: #ffffff;
+  background-image: url('./assets/st-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  color: #f5e8e2;
+  color: #C22E2C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 button,
@@ -26,28 +27,38 @@ input,
 textarea {
   padding: 0.5em;
   margin-top: 0.5em;
-  border: 2.5px solid rgb(137, 118, 91);
-  background-color: rgb(40, 35, 29);
-  color: #f5e8e2;
+  border: 2px solid #C22E2C;
+  background-color: #ffffff;
+  color: #C22E2C;
   border-radius: 1em;
+  font-size: 1.5em;
+
 }
 
 button {
   max-width: 20vw;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  
+
 }
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: #6a4e4b;
+  background-color: #C22E2C;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(40, 35, 29);
+  background-color: #ffffff;
+  color: #C22E2C;
   padding: 1em 0;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 10px 0 #C22E2C;
   min-width: 100vw;
   
 }
@@ -57,18 +68,20 @@ input[type="submit"]:hover {
   text-decoration: none;
   color: #ffffff;
   padding: 0.5em 1em;
-  background: none;
-  border: none;
+  background: #C22E2C;
+  border: #ffffff solid 2px;
   cursor: pointer;
   border-radius: 1em;
   font-size: 1.5em;
-  vertical-align: middle;
+  vertical-align: top;
 
 }
 
 .navbar a:hover,
 .navbar button:hover {
-  background-color: rgb(40, 20, 20);
+  background-color: #ffffff;
+  color: #C22E2C;
+  border: #C22E2C solid 2px;
 }
 
 .container {
@@ -77,11 +90,16 @@ input[type="submit"]:hover {
   justify-content: space-around;
   margin: 1.5em;
   padding: 1em;
-  border: 2.5px solid rgb(137, 118, 91);
+  border: 2.5px solid #C22E2C;
   border-radius: 1em;
-  background-color: rgb(40, 35, 29);
+  background-color: #ffffff;
+  color: #C22E2C;
 }
 
+.contain:focus-within {
+  border: #C22E2C;
+  color: #ffffff;
+}
 .container-child {
   list-style-type: none;
   padding: 0.5em;
@@ -89,8 +107,14 @@ input[type="submit"]:hover {
   margin: 1em;
   flex-direction: column;
   gap: 1em;
-  border: 2.5px solid rgb(137, 118, 91);
+  border: 2.5px solid #C22E2C;
   border-radius: 1em;
+  color: #C22E2C;
+}
+
+.container-child:focus {
+  border: #C22E2C;
+  color: #ffffff;
 }
 
 .action {
@@ -98,10 +122,14 @@ input[type="submit"]:hover {
   background: none;
   border: none;
   padding: 0.5em 1em;
+  
 }
 
 .title {
   text-align: center;
+  font-size: 2em;
+  margin: 0.5em;
+  color: #C22E2C;
 }
 
 .home-text {
@@ -109,14 +137,21 @@ input[type="submit"]:hover {
   text-align: center;
   font-size: 1.5em;
   margin: 0 20vw 0 20vw;
+  
 }
 
 .searchBar {
   gap: 1em;
-  border: 2.5px solid rgb(137, 118, 91);
+  border: 2px solid #C22E2C;
   border-radius: 1.5em;
   margin: 1em;
   margin: 1em 5em 1em 5em;
+  color: #C22E2C;
+}
+
+.searchBar:focus {
+  border: #C22E2C;
+  color: #ffffff;
 }
 
 .danger-button {
