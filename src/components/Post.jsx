@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useContext, useState } from "react";
 import { UserContext } from "../contexts/UserContext";
 import MessageForm from "./MessageForm";

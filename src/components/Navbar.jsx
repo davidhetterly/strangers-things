@@ -24,7 +24,7 @@ function Navbar() {
         <>
           <Link to="/new-post">Create New Post</Link>
           <Link to="/profile">Profile</Link>
-          <button onClick={handleLogout}>Logout</button>
+          <Link onClick={handleLogout}>Logout</Link>
         </>
       ) : (
         <Link to="/login">Login</Link>
