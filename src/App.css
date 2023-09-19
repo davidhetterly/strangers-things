@@ -9,7 +9,11 @@ body {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(32, 28, 28);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('w3css.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   color: #f5e8e2;
   min-height: 100vh;
   display: flex;
